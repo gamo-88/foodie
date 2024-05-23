@@ -1,0 +1,318 @@
+/* *******NAVBAR********* */
+.navbar{
+    z-index: 1000;
+    width: 100%;
+}
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav .fonctions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav .fonctions .bag {
+	position: relative;
+	margin-left: 10px;
+	cursor: pointer;
+}
+nav .fonctions .bag #bagItem {
+	position: absolute;
+	top: -3px;
+	right: -3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-weight: bold;
+	background-color: crimson;
+	font-size: 16px;
+	min-height: 20px;
+	min-width: 20px;
+	border-radius: 30%;
+}
+nav .fonctions .compte button {
+	border: 2px solid blue;
+	border-radius: 15px;
+	padding: 0 10px;
+	margin-left: 5px;
+	font-size: 20px;
+}
+.equaliser{
+    height: 50px;
+    width: 100%;
+}
+
+.nav-link:hover,
+.actives {
+	border-bottom: 3px solid orangered;
+}
+tr{
+    vertical-align: middle;
+    text-align: center;
+}
+tr img{
+    height: 45px;
+    width: 45px;
+}
+.text-danger{
+    color: crimson;
+}
+.qte{
+    text-align: center;
+}
+#foodQte{
+    padding: 0 3px;
+}
+.qte button{
+    font-weight: bolder;
+}
+.panier{
+    min-width: fit-content;
+}
+
+@media (max-width: 992px) {
+	.nav-link {
+		transition: 0.3s;
+	}
+	.nav-link:hover,
+	.actives {
+		transform: translateX(8px);
+		border-bottom: none;
+	}
+}
+
+/* *******NAVBAR********* */
+
+/* *******CARTE REPAS********* */
+.repasListe{
+    display: flex;justify-content: center;align-items: center;
+}
+
+.carteRepas{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s;
+}
+.carteRepas:hover{
+    background-color: aliceblue;
+}
+.carteRepasImage{
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.carteRepasImage img{
+    width: 100%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+
+}
+.carteRepasImage .bouttonAjouter{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    cursor: pointer;display: flex;justify-content: center;align-items: center;
+    transition: .3s;
+}
+.carteRepasImage .bouttonAjouter:hover{
+    border: 1px solid crimson;
+    border-radius: 50%;
+}
+.starIcon:hover{
+    transition: .2s;
+}
+.starIcon:hover{
+    transform: translateY(-3px);
+}
+.carteRepasBody{
+    padding: 8px 5px;
+}
+.carteRepasBody .carteRepasBody_titre, .carteRepasFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+
+}
+.foodCategory{
+    font-weight: bold;
+}
+@media(max-width:900px){
+    .carteRepas{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        transition: .5s;
+    }
+    .repasListe{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+
+
+/* *******HOME assets/menu/header_img.png PAGE******* */
+
+    /* *****CAROUSSEL**** */
+
+.carousel-item {
+	height: 30rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-item img {
+	filter: brightness(50%);
+    position: absolute;
+
+
+}
+.carousel-item .carouselDesc{
+    color: #fff;
+    z-index: 10;
+    position: absolute;
+    left: 15%;
+    margin-top: 10%;
+    max-width: 60%;
+}
+a{
+   text-decoration: none; 
+   color: #fff;
+}
+
+@media(max-width:900px){
+    .carousel-item{
+        height: 15rem;
+    }
+    .carousel-item img{
+        height: 100%;
+    }
+}
+
+
+.box{
+    display: flex;justify-content: center;
+}
+
+
+
+/* *******FOOTER******* */
+.mainFoot{
+    margin-top: 90px;
+
+}
+.mainFoot hr{
+    width: 95%;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.delimiteurHR{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    color: gray;
+}
+
+@media(max-width:470px){
+    .footer{
+        flex-direction: column;
+    }
+}
+
+/* *****CHOIX MENU***** */
+.choixMenu .choixMenuImage img{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s ease-out;
+}
+.choixMenu .choixMenuNom{
+    text-align: center;
+    cursor: pointer;
+}
+.choixMenu .choixMenuNom:hover{
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+
+/* *******MENU******** */
+
+.displayBy{
+    display: flex;
+    gap: 15px;
+}
+.displayFood{
+    display: flex;
+    justify-self: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.btn-no-border-radius {
+    border-radius: 0; /* Set border radius to 0 or another value to remove the rounded corners */
+}
+
+/* *******CONTACT PAGE******** */
+
+
+
+
+/* modale */
+
+
+.modaleChanger:hover{
+    cursor: pointer;
+    text-decoration: underline blue;
+}
+.modaleBackground{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: .5s ease-out;
+    z-index: 100000;
+
+}
+.modale{
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100001;
+    border-radius: 8px;
+    background-color: #fff;
+}
+.modale .main{
+    max-width: 400px;
+    width: 390px;
+    min-width: 280px;
+}
+.modaleHeader{
+    display: flex;
+    justify-content: space-between;align-items: center;
+}
+
+.comment{
+    border: solid grey 1px;
+    border-radius: 4px;
+    height: fit-content;
+}
