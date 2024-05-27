@@ -1,4 +1,4 @@
-# Application foodie React + Vite + JsonServer
+# Application foodie React + Vite + JsonServer + zustand + emailjs etc
 
 CECI EST UNE REPRODUCTION D'UNE APPLI PRESENTEE SOUS FORME DE VIDEO POUR L'EVALUATION DE CLOTURE EN REACT AU CENTRE AGORA-TECH ACADEMY
 
