@@ -73,7 +73,7 @@ tr img{
     min-width: fit-content;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 500px) {
 	.nav-link {
 		transition: 0.3s;
 	}

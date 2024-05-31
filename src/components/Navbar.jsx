@@ -59,7 +59,6 @@ export default function Navbar() {
 		PanierStore.persist.clearStorage("plat");
 	}
 
-
 	// boostrap modale
 
 	return (
@@ -73,8 +72,8 @@ export default function Navbar() {
 					<div className="fonctions d-md-none d-xs-flex ms-auto me-2">
 						<div
 							className="bag"
-							data-bs-toggle="offcanvas" 
-							data-bs-target="#offcanvasWithBothOptions" 
+							data-bs-toggle="offcanvas"
+							data-bs-target="#offcanvasWithBothOptions"
 							aria-controls="offcanvasWithBothOptions"
 						>
 							<ShoppingBagIcon
@@ -120,9 +119,7 @@ export default function Navbar() {
 									</ul>
 								</div>
 							) : (
-								<button
-								data-bs-toggle="modal" data-bs-target="#exampleModal"
-								>
+								<button data-bs-toggle="modal" data-bs-target="#exampleModal">
 									<AccountCircleRoundedIcon style={{ color: "grey" }} />
 								</button>
 							)}
@@ -177,8 +174,8 @@ export default function Navbar() {
 						<div className="fonctions d-none d-md-flex me-2">
 							<div
 								className="bag"
-								data-bs-toggle="offcanvas" 
-								data-bs-target="#offcanvasWithBothOptions" 
+								data-bs-toggle="offcanvas"
+								data-bs-target="#offcanvasWithBothOptions"
 								aria-controls="offcanvasWithBothOptions"
 							>
 								<ShoppingBagIcon
@@ -224,9 +221,14 @@ export default function Navbar() {
 										</ul>
 									</div>
 								) : (
-									<button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-									log in
-								  </button>
+									<button
+										type="button"
+										className="btn btn-primary"
+										data-bs-toggle="modal"
+										data-bs-target="#exampleModal"
+									>
+										log in
+									</button>
 								)}
 							</div>
 						</div>
@@ -234,28 +236,30 @@ export default function Navbar() {
 				</div>
 			</nav>
 
-			<div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div className="modal-dialog">
-    <div className="modal-content">
-	{modaleContent ? (
-									<Inscrire
-										
-										modaleChanger={setModaleContent}
-									/>
-								) : (
-									<Connecter
-										
-										modaleChanger={setModaleContent}
-									/>
-								)}
-    </div>
-  </div>
-</div>
-
-
+			<div
+				className="modal fade"
+				id="exampleModal"
+				tabindex="-1"
+				aria-labelledby="exampleModalLabel"
+				aria-hidden="true"
+			>
+				<div className="modal-dialog">
+					<div className="modal-content">
+						{modaleContent ? (
+							<Inscrire modaleChanger={setModaleContent} />
+						) : (
+							<Connecter modaleChanger={setModaleContent} />
+						)}
+					</div>
+				</div>
+			</div>
 
 			<div
-				class="offcanvas offcanvas-start panier" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel"
+				class="offcanvas offcanvas-start panier"
+				data-bs-scroll="true"
+				tabindex="-1"
+				id="offcanvasWithBothOptions"
+				aria-labelledby="offcanvasWithBothOptionsLabel"
 			>
 				<div class="offcanvas-header">
 					<h5 class="offcanvas-title" id="staticBackdropLabel">
@@ -284,14 +288,16 @@ export default function Navbar() {
 								{user.isConnected ? (
 									<button
 										className="btn btn-success btn-no-border-radius"
-										data-bs-toggle="modal" data-bs-target="#exampleModal1"
+										data-bs-toggle="modal"
+										data-bs-target="#exampleModal1"
 									>
 										Payez-Maintenant
 									</button>
 								) : (
 									<button
 										className="btn btn-primary btn-no-border-radius"
-										data-bs-toggle="modal" data-bs-target="#exampleModal"
+										data-bs-toggle="modal"
+										data-bs-target="#exampleModal"
 									>
 										Connectez-vous
 									</button>
@@ -359,20 +365,19 @@ export default function Navbar() {
 				</div>
 			</div>
 
-
-			<div className="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div className="modal-dialog">
-    <div className="modal-content">
-
-      <div className="modal-body">
-        {
-		<Payer/>
-		}
-      </div>
-
-    </div>
-  </div>
-</div>
+			<div
+				className="modal fade"
+				id="exampleModal1"
+				tabindex="-1"
+				aria-labelledby="exampleModalLabel"
+				aria-hidden="true"
+			>
+				<div className="modal-dialog">
+					<div className="modal-content">
+						<div className="modal-body">{<Payer />}</div>
+					</div>
+				</div>
+			</div>
 		</main>
 	);
 }
