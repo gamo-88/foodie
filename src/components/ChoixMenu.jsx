@@ -3,10 +3,8 @@ import React, { useRef, useState } from 'react'
 export default function ChoixMenu({menu, goWithName}) {
 let nomMenu = useRef(null)
 function getNameMenu() {
-    const current=nomMenu.current.innerText
     goWithName(nomMenu.current.innerText)
     console.log(nomMenu.current.innerText);
-    nomPlat=current
 
 }
 

@@ -42,7 +42,7 @@ export default function Menu() {
 					<div className="displayBy d-none d-lg-flex ">
 						{menu_list.map((menu, index) => {
 							return (
-								<div className={`chooser ${(id===menu.menu_name) && 'border border-primary'}`} key={index} onClick={()=>setId(menu.menu_name)}>
+								<div className={`chooser ${(id===menu.menu_name) && 'borderMenu'}`} key={index} onClick={()=>setId(menu.menu_name)}>
 									<ChoixMenu menu={menu} goWithName={takeName} />
 								</div>
 							);

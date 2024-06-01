@@ -316,3 +316,19 @@ a{
     border-radius: 4px;
     height: fit-content;
 }
+
+.borderMenu{
+    border: 4px rgb(0, 255, 89) solid;
+    border-radius: 40%;
+    animation-name: turner;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes turner {
+    0% {    border-top: 4px rgb(0, 179, 255) solid ;}
+    25% {    border-right: 4px rgb(0, 179, 255) solid ;}
+    50% {    border-bottom: 4px rgb(0, 179, 255) solid ;}
+    75% {    border-left: 4px rgb(0, 179, 255) solid ;}
+  }

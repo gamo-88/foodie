@@ -104,13 +104,13 @@ async function handleSubmit(e){
 </div>
     <div className="autreOption text-center mb-3">Deja un compte? <span className='modaleChanger' onClick={()=>{modaleChanger(false); removeAllUsers() }}>Se connecter</span></div>
     <div className="modaleFooter"><button type="submit" className='btn-no-border-radius w-100 btn btn-secondary'>Creer un compte</button>
-    {
+    {/* {
       USERLIST.map((user)=>{
         return(
           <div className="">{user.email}</div>
         )
       })
-    }
+    } */}
     </div>
         </form>
     </div>

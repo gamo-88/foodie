@@ -127,6 +127,12 @@
       "name": "azura",
       "email": "maximegamo@gmail.com",
       "password": "kameni"
+    },
+    {
+      "id": "c143",
+      "name": "mdamba",
+      "email": "ndamba@gmail.com",
+      "password": "ndamba123"
     }
   ]
 }
